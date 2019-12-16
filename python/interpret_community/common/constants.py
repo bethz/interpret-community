@@ -68,6 +68,9 @@ class ExplainParams(object):
     MODEL_ID = 'model_id'
     MODEL_TASK = 'model_task'
     MODEL_TYPE = 'model_type'
+    NUM_CLASSES = 'num_classes'
+    NUM_EXAMPLES = 'num_examples'
+    NUM_FEATURES = 'num_features'
     PER_CLASS_NAMES = 'per_class_names'
     PER_CLASS_RANK = 'per_class_rank'
     PER_CLASS_VALUES = 'per_class_values'
@@ -195,6 +198,7 @@ class LightGBMSerializationConstants(object):
     LOGGER = '_logger'
     MODEL_STR = 'model_str'
     MULTICLASS = 'multiclass'
+    REGRESSION = 'regression'
     TREE_EXPLAINER = '_tree_explainer'
     OBJECTIVE = 'objective'
 
@@ -230,6 +234,9 @@ class InterpretData(object):
     UNIVARIATE = 'univariate'
     VALUE = 'value'
     VALUES = 'values'
+    EXPLANATION_CLASS_DIMENSION = 'explanation_class_dimension'
+    MULTICLASS = 'multiclass'
+    SINGLE = 'single'
 
 
 class Extension(object):
@@ -240,3 +247,9 @@ class Extension(object):
     GLOBAL = 'global'
     GREYBOX = 'specific'
     LOCAL = 'local'
+
+
+class SHAPDefaults(object):
+    """Provide constants for default values to shap."""
+
+    INDEPENDENT = 'independent'
